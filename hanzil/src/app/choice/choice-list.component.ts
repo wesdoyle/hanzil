@@ -9,6 +9,9 @@ import { ChoiceService } from './shared/choice.service'
 export class ChoiceListComponent{
     choices:any[]
     constructor(private choiceService: ChoiceService){
+    }
+
+    ngOnInit(){
         this.choices = this.choiceService.getChoices()
     }
 }
