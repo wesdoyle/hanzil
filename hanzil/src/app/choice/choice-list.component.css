@@ -1,8 +1,13 @@
+h3{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #555;
+}
 .choices-container{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    width: 300px;
+    width: 340px;
     padding: 3px;
     margin: auto;
     font-size: 2em;
