@@ -8,7 +8,6 @@ import { AlertModule } from 'ngx-bootstrap';
 import { NavBarComponent } from './navbar/navbar.component';
 import { ChoiceListComponent } from './choice/choice-list.component';
 import { ChoiceService } from './choice/shared/choice.service';
-
 import { AppComponent } from './app.component';
 
 @NgModule({

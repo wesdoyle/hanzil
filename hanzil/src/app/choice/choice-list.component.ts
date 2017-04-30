@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { ChoiceService } from './shared/choice.service'
 
 @Component({
@@ -6,9 +6,10 @@ import { ChoiceService } from './shared/choice.service'
     templateUrl: 'choice-list.component.html',
     styleUrls: ['choice-list.component.css']
 })
-export class ChoiceListComponent{
+export class ChoiceListComponent implements OnInit{
     choices:any[]
     constructor(private choiceService: ChoiceService){
+
     }
 
     ngOnInit(){
