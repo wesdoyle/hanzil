@@ -1,0 +1,6 @@
+.choice-default{
+    font-size: 1.2em;
+    padding: 3px;
+    box-shadow: 3px 5px 5px #aaa;
+    outline: 1px solid #ddd;
+}

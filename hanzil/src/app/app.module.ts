@@ -6,6 +6,7 @@ import { CardComponent } from './card/card.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { NavBarComponent } from './navbar/navbar.component';
+import { ChoiceListComponent } from './choice/choice-list.component';
 
 import { AppComponent } from './app.component';
 
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
       CardComponent,
       ChoiceComponent,
       NavBarComponent,
+      ChoiceListComponent
   ],
   imports: [
     BrowserModule,
