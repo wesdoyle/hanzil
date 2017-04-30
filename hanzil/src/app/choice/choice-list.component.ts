@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { ChoiceService } from './shared/choice.service'
 
 @Component({
     selector: 'problem-choice-list',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core'
     styleUrls: ['choice-list.component.css']
 })
 export class ChoiceListComponent{
-
-    logFoo(){
-        console.log('foo')
+    choices:any[]
+    constructor(private choiceService: ChoiceService){
+        this.choices = this.choiceService.getChoices()
     }
 }
