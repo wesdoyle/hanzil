@@ -1,0 +1,10 @@
+h3 {
+    color: #B01;
+}
+.card-default{
+    width: 300px;
+    height: 340px;
+    padding: 3px;
+    box-shadow: 3px 5px 5px #aaa;
+    outline: 1px solid #ddd;
+}
