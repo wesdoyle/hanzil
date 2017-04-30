@@ -6,22 +6,6 @@ import { Component } from '@angular/core'
     styleUrls: ['choice-list.component.css']
 })
 export class ChoiceListComponent{
-    choices = [
-        {
-            id: 1,
-            name: 'Big'
-        },
-
-        {
-            id: 2,
-            name: 'To Be'
-        },
-
-        {
-            id: 3,
-            name: 'Question Particle'
-        }
-    ]
 
     logFoo(){
         console.log('foo')
