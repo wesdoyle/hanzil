@@ -8,6 +8,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { NavBarComponent } from './navbar/navbar.component';
 import { ChoiceListComponent } from './choice/choice-list.component';
 import { ChoiceService } from './choice/shared/choice.service';
+import { ToastrService } from './common/toastr.service';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -24,7 +25,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     AlertModule.forRoot(),
   ],
-  providers: [ChoiceService],
+  providers: [ChoiceService, ToastrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

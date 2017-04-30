@@ -1,17 +1,14 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core'
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core'
+import { ToastrService } from '../common/toastr.service'
 
 @Component({
     selector: 'problem-choice',
     templateUrl: 'choice.component.html',
-    styleUrls: ['choice.component.css']
+    styleUrls: ['choice.component.css'],
 })
-export class ChoiceComponent{
+export class ChoiceComponent implements OnInit{
     @Input() choice:any
 
-    name = "foo"
-    id = 1
+    ngOnInit(){}
 
-    logFoo(){
-        console.log(this.name, this.id)
-    }
 }

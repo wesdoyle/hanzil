@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { ChoiceService } from './shared/choice.service'
+import { ToastrService } from '../common/toastr.service'
 
 @Component({
     selector: 'problem-choice-list',
@@ -8,8 +9,12 @@ import { ChoiceService } from './shared/choice.service'
 })
 export class ChoiceListComponent implements OnInit{
     choices:any[]
-    constructor(private choiceService: ChoiceService){
 
+    constructor(private choiceService: ChoiceService, private toastr: ToastrService){
+    }
+
+    handleChoiceClick(choiceName){
+        this.toastr.info(choiceName)
     }
 
     ngOnInit(){
