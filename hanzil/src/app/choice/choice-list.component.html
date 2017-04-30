@@ -1,16 +1,6 @@
 <div class="row">
     <div class="choices-container">
         <h3>Choose the Meaning</h3>
-        <button class="btn btn-lg btn-info" (click)="choice.logFoo()">
-            <problem-choice #choice [choice]="choice1"></problem-choice>
-        </button>
-
-        <button class="btn btn-lg btn-info" (click)="choice.logFoo()">
-            <problem-choice #choice [choice]="choice2"></problem-choice>
-        </button>
-
-        <button class="btn btn-lg btn-info" (click)="choice.logFoo()">
-            <problem-choice #choice [choice]="choice3"></problem-choice>
-        </button>
+            <problem-choice *ngFor="let choice of choices" [choice]="choice"></problem-choice>
     </div>
 </div>
