@@ -1,0 +1,9 @@
+.choices-container{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    padding: 3px;
+    margin: auto;
+    font-size: 2em;
+}

@@ -13,7 +13,7 @@ export class ChoiceListComponent{
 
     choice2 = {
         id: 2,
-        name: 'Here'
+        name: 'To Be'
     }
 
     choice3 = {
