@@ -8,5 +8,5 @@ export const appRoutes:Routes = [
     { path: 'cards', component: CardComponent },
     { path: 'decks', component: DecksComponent },
     { path: 'decks/:id', component: DeckDetailComponent },
-    { path: '', redirectTo: '/decks', pathMatch: 'full' }
+    { path: '', redirectTo: '/cards', pathMatch: 'full' }
 ]
