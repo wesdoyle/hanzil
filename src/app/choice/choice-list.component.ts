@@ -3,7 +3,7 @@ import { ChoiceService } from './shared/choice.service'
 import { ToastrService } from '../common/toastr.service'
 
 @Component({
-    selector: 'problem-choice-list',
+    selector: 'eng-choice-list',
     templateUrl: 'choice-list.component.html',
     styleUrls: ['choice-list.component.css']
 })

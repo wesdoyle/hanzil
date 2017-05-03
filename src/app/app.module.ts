@@ -12,6 +12,9 @@ import { ToastrService } from './common/toastr.service';
 import { AppComponent } from './app.component';
 import { DeckDetailComponent } from './deck/deck-detail/deck-detail.component';
 import { DeckService } from './deck/shared/deck.service';
+import { appRoutes } from './routes';
+import { RouterModule } from '@angular/router';
+import { DecksComponent } from './deck/decks.component'
 
 @NgModule({
   declarations: [
@@ -20,15 +23,17 @@ import { DeckService } from './deck/shared/deck.service';
       ChoiceComponent,
       NavBarComponent,
       ChoiceListComponent,
-      DeckDetailComponent
+      DeckDetailComponent,
+      DecksComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AlertModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [ChoiceService, ToastrService],
+  providers: [ChoiceService, ToastrService, DeckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

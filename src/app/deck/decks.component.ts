@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { DeckService } from '../shared/deck.service'
+import { DeckService } from './shared/deck.service'
 
 @Component({
     templateUrl: 'decks.component.html',

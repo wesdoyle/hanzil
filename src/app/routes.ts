@@ -1,9 +1,10 @@
-import { CardComponent } from './card/card.component.ts'
-import { DecksComponent } from './deck/deck.component.ts'
+import { Routes } from '@angular/router'
+import { CardComponent } from './card/card.component'
+import { DecksComponent } from './deck/decks.component'
 import { DeckDetailComponent } from
-    './deck/deck-detail/deck-detail.component.ts'
+    './deck/deck-detail/deck-detail.component'
 
-export const appRoutes = [
+export const appRoutes:Routes = [
     { path: 'cards', component: CardComponent },
     { path: 'decks', component: DecksComponent },
     { path: 'decks/:id', component: DeckDetailComponent },
