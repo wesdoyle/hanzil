@@ -10,6 +10,8 @@ import { ChoiceListComponent } from './choice/choice-list.component';
 import { ChoiceService } from './choice/shared/choice.service';
 import { ToastrService } from './common/toastr.service';
 import { AppComponent } from './app.component';
+import { DeckDetailComponent } from './deck/deck-detail/deck-detail.component';
+import { DeckService } from './deck/shared/deck.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { AppComponent } from './app.component';
       CardComponent,
       ChoiceComponent,
       NavBarComponent,
-      ChoiceListComponent
+      ChoiceListComponent,
+      DeckDetailComponent
   ],
   imports: [
     BrowserModule,

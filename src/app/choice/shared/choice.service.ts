@@ -3,11 +3,15 @@ import { Injectable } from '@angular/core'
 @Injectable()
 export class ChoiceService {
     getChoices(){
-        return EVENTS
+        return ENG_CHOICES
+    }
+
+    getChoice(id:number){
+        return ENG_CHOICES.find(choice => choice.id === id)
     }
 }
 
-const EVENTS = [
+const ENG_CHOICES = [
     {id: 1,
         name: "Big"},
     {id: 2,
