@@ -1,4 +1,4 @@
 # Hanzil
 
-This is an Angular2 application for learning the Hanzi characters using [spaced-repition](https://en.wikipedia.org/wiki/Spaced_repetition).
+**Note:** This project has moved to a new repository: [hanzil-react](https://github.com/wesdoyle/hanzil-react).
 
